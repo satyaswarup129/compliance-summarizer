@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 
-const API = 'http://localhost:8000'
+const API = import.meta.env.VITE_API_URL
 const FORM_TYPES = ['10-K', '10-Q', '8-K', 'S-1', 'DEF 14A']
 const EXAMPLE_TICKERS = ['AAPL', 'MSFT', 'GOOGL', 'JPM', 'GS', 'BAC']
 const FORM_HINTS = {
